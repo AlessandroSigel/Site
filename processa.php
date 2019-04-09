@@ -21,12 +21,12 @@
 
         $from = new SendGrid\Email(null, $email);
         $subject = "Mesangem de Contato";
-        $to = new SendGrid\Email(null, "alessandrosigel09@gmail.com");
+        $to = new SendGrid\Email(null, "seu-email@gmail.com");
         $content = new SendGrid\Content("text/html", "Olá Alessandro, <br><br> Nova mensagem de contato<br><br>Nome: $nome <br>E-mail: $email <br>Assunto: $assunto <br>Mensagem: $mensagem");
         $email = new SendGrid\Mail($from, $subject, $to, $content);
         
         //Necessário inserir a chave
-        $apiKey = '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';
+        $apiKey = '';
         $sg = new \SendGrid($apiKey);
 
         $response = $sg->client->mail()->send()->post($email);
