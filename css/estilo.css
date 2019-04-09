@@ -61,11 +61,11 @@ a:hover{
     width: 940px;
 }
 
-/*Estilos Reutilizáveis*/
+/*Estilos Reutilizï¿½veis*/
 .sem-padding{
     padding:0 !important;
 }
-/*!important: força a utilização daquela função, mesmo
+/*!important: forï¿½a a utilizaï¿½ï¿½o daquela funï¿½ï¿½o, mesmo
 que abaixo ela mude*/
 
 .sem-margin{
@@ -86,7 +86,7 @@ ul.inline li, ol.inline li{
     margin-right: 15px;
 }
 
-ul.inline li:last-child, ol.inline li:last-child{ /*last-child: o ultimo item da li terá margin: 0;*/
+ul.inline li:last-child, ol.inline li:last-child{ /*last-child: o ultimo item da li terï¿½ margin: 0;*/
     margin-right: 0px;
 }
 
@@ -97,7 +97,7 @@ ul.sem-marcador, ol.sem-marcador{
 a.botao, input.botao{
     background: #1f3c58;
     padding: 5px 10px;
-    border-radius: 3px; /*Esse comando arredonda as bordas do botão*/
+    border-radius: 3px; /*Esse comando arredonda as bordas do botï¿½o*/
     color: #ebebeb;
     cursor: pointer;
     margin: 5px 0;
@@ -163,7 +163,7 @@ ul.noticias li{
 }
 ul.noticias li img{
     width: 70px; /*largura de 70px;*/
-    height: auto; /*Autura automático*/
+    height: auto; /*Autura automï¿½tico*/
     margin-right: 10px;/*margem do lado direito de 10px*/
     float: left; /*Flutuar do lado esquerdo*/
 }

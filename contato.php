@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/normalize.css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet"/>
         <link rel="stylesheet" href="css/estilo.css" />
+        <link href="processa.php"/>
     </head>
     <body>
         <div class="header">
@@ -46,16 +47,20 @@
                 </div>
                 <div class="coluna col7 contato">
                     <h2>Envie sua mensagem</h2>
-                    <form action="">
-                        <label for="name"> Seu nome:</label>
-                        <input type="text" name="nome" id="nome" />
+                    <form method="POST" action="processa.php">
+                        <label for="name" > Seu nome:</label>
+                        <input type="text" name="nome"  placeholder="Nome" />
+
                         <label for="email"> Seu email:</label>
-                        <input type="text" name="email" id="email" />
+                        <input type="text" name="email"  placeholder="E-mail" />
+
                         <label for="assunto"> Assunto:</label>
-                        <input type="text" name="assunto" id="assunto" />
-                        <label for="mensagem"> Mensagem:</label>
-                        <textarea name="mensagem" id="mensagem"></textarea>
-                        <input type="submit" class="botao" name="enviar" value="Enviar Mensagem &raquo;" />
+                        <input type="text" name="assunto"  placeholder="Assunto" />
+
+                        <label for="mensagem" > Mensagem:</label>
+                        <textarea name="mensagem"  placeholder="Escreva sua Mensagem"></textarea>
+                        
+                        <input type="submit" class="botao" name="enviar" value="Enviar &raquo;" />
                     </form>
                 </div>
             </section>
@@ -78,31 +83,35 @@
                     <h3>Últimas notícias</h3>
                     <ul class="sem-marcador sem-padding noticias">
                         <li>
-                            <img src="img/thumb-pequena.jpg" alt="">
-                            <h4>Título da Notícia Publicada no Blog</h4>
-                            <p>Java é uma linguagem de programação orientada 
-                            a objetos desenvolvida na década de 90 por uma
-                            equipe de programadores chefiada por James Gosling,
-                            na empresa Sun Microsystems. Em 2008 o Java foi 
-                            adquirido pela empresa Oracle Corporation <a href="">Leia Mais &raquo;</a></p>
+                        <img src="img/noticia1.jpg" alt="">
+                        <h4>Alunos derrubam Wifi para impedir a realização de prova</h4>
+                        <p>A escola New Jersey Secuacus, nos Estados Unidos,
+                         possui um sistema de aprendizado online para os estudantes 
+                         realizarem lições conectados. Para isso, a própria escola 
+                         também oferece rede WiFi para tornar possível esse tipo de aprendizado.
+                         <a href="https://www.tecmundo.com.br/seguranca/140193-alunos-derrubam-wifi-escola-impedir-realizacao-provas.htm"
+                          target="_bank">Leia Mais &raquo;</a></p>
                         </li>
                         <li>
-                            <img src="img/thumb-pequena.jpg" alt="">
-                            <h4>Título da Notícia Publicada no Blog</h4>
-                            <p>Java é uma linguagem de programação orientada 
-                            a objetos desenvolvida na década de 90 por uma
-                            equipe de programadores chefiada por James Gosling,
-                            na empresa Sun Microsystems. Em 2008 o Java foi 
-                            adquirido pela empresa Oracle Corporation <a href="">Leia Mais &raquo;</a></p>
+                            <img src="img/noticia2.jpg" alt="">
+                            <h4>Listas dos 10 filmes maispirateados da semana</h4>
+                            <p>Seguindo a tradição, o site norte-americano TorrentFreak divulgou nesta segunda-feira (08)
+                                 a lista com os 10 filmes mais pirateados durante os últimos sete dias. 
+                                 Para a criação desses rankings, ele faz uma busca nos arquivos mais baixados 
+                                 pela rede do BitTorrent — uma das mais populares da atualidade. 
+                                 <a href="https://www.tecmundo.com.br/cultura-geek/140194-lista-10-filmes-pirateados-semana-08-04-2019.htm"
+                                target="_bank">Leia Mais &raquo;</a></p>
                         </li>
                         <li>
-                            <img src="img/thumb-pequena.jpg" alt="">
-                            <h4>Título da Notícia Publicada no Blog</h4>
-                            <p>Java é uma linguagem de programação orientada 
-                            a objetos desenvolvida na década de 90 por uma
-                            equipe de programadores chefiada por James Gosling,
-                            na empresa Sun Microsystems. Em 2008 o Java foi 
-                            adquirido pela empresa Oracle Corporation <a href="">Leia Mais &raquo;</a></p>
+                                <img src="img/noticia3.jpg" alt="">
+                                <h4>AMD anuncia novos processadores Ryzen Pro e Athlon Pro para notebooks</h4>
+                                <p>A AMD anunciou nesta segunda-feira (8) sua nova linha de processadores para notebooks.
+                                 A segunda geração do Ryzen Pro e do Athlon Pro vem na arquitetura de 12 nm, 
+                                 conta com placa gráfica Radeon Vega, promete melhor eficiência no consumo de energia, 
+                                 recursos de segurança atualizados e parceria com fabricantes que possam entregar um gama de 
+                                 produtos para atender ao uso diário até  às atividades mais intensas. 
+                                 <a href="https://www.tecmundo.com.br/produto/140192-amd-anuncia-novos-processadores-ryzen-pro-athlon-pro-notebooks.htm"
+                                 target="_bank">Leia Mais &raquo;</a></p>
                         </li>
                     </ul>
                 </div>
